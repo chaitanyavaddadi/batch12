@@ -6,7 +6,7 @@ pipeline {
 				label "master"
             }
 			steps {
-				git 'git@github.com:chaitanyavaddadi/batch12.git'
+				git 'https://github.com/chaitanyavaddadi/batch12.git'
 				withEnv(["PATH+MAVEN=${tool 'maven'}/bin"]) {
 					sh "mvn clean package"		  
 				}
